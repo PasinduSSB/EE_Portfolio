@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electrical Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home">
+        <span class="brand-mark">EE</span>
+        <span>Electrical Engineer</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">Electrical Engineer | Power Systems | Automation</p>
+        <h1>Designing reliable electrical systems for smarter energy infrastructure.</h1>
+        <p>
+          I build practical engineering solutions across microgrid energy
+          management, renewable integration, power electronics, protection
+          concepts, and data-driven dashboards for electrical system analysis.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">View Projects</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <aside class="hero-visual" aria-label="Electrical engineering system overview">
+        <div class="scope-grid">
+          <span class="node node-source">PV</span>
+          <span class="trace trace-a"></span>
+          <span class="node node-control">EMS</span>
+          <span class="trace trace-b"></span>
+          <span class="node node-load">LOAD</span>
+          <span class="node node-storage">BESS</span>
+          <span class="trace trace-c"></span>
+          <span class="node node-grid">GRID</span>
+        </div>
+        <div class="system-readout">
+          <div>
+            <span class="metric">24 h</span>
+            <p>Dispatch profile analysis</p>
+          </div>
+          <div>
+            <span class="metric">PV + BESS</span>
+            <p>Renewable energy integration</p>
+          </div>
+          <div>
+            <span class="metric">Python</span>
+            <p>Engineering models and dashboards</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Featured Work</p>
+        <h2>Projects</h2>
+      </div>
+      <div class="project-preview">
+        <article class="card">
+          <h3>EMS Microgrid System</h3>
+          <p>
+            Energy management dashboard for coordinating PV generation, battery
+            storage, load demand, and grid exchange in a microgrid.
+          </p>
+          <a class="button secondary" href="microgrid-ems.html">View Project</a>
+        </article>
+        <article class="card">
+          <h3>GFM Inverter Control</h3>
+          <p>
+            Grid-forming inverter control concept focused on voltage support,
+            frequency stability, and renewable-rich power systems.
+          </p>
+          <a class="button secondary" href="gfm.html">View Project</a>
+        </article>
+        <article class="card">
+          <h3>MATLAB Automation</h3>
+          <p>
+            Automation workflow for electrical engineering calculations,
+            simulation setup, result processing, and technical reporting.
+          </p>
+          <a class="button secondary" href="matlab.html">View Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Technical Profile</p>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Power Systems</h3>
+          <ul>
+            <li>Microgrid modeling</li>
+            <li>PV and battery integration</li>
+            <li>Load profile analysis</li>
+            <li>Protection and reliability concepts</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Simulation & Software</h3>
+          <ul>
+            <li>Python engineering scripts</li>
+            <li>Streamlit dashboards</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Data visualization</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Automation</h3>
+          <ul>
+            <li>Control logic design</li>
+            <li>Data acquisition concepts</li>
+            <li>Performance reporting</li>
+            <li>Technical documentation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Available for electrical engineering projects, internships, and technical collaborations.</h2>
+      </div>
+      <div class="contact-card">
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
+        <a href="tel:+94700000000">+94 70 000 0000</a>
+        <span>Colombo, Sri Lanka</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Electrical Engineer Portfolio</p>
+    <p>Power Systems | Renewable Energy | Automation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

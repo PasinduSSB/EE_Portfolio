@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Electrical Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html#home">
+        <span class="brand-mark">EE</span>
+        <span>Portfolio</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">Portfolio Projects</p>
+      <h1>Electrical engineering systems with practical dashboards.</h1>
+      <p>
+        Project cards highlight engineering scope, tools, and dashboard access
+        for simulation or visualization work.
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="projects-grid">
+        <article class="project-card">
+          <div>
+            <p class="tag">Python + Streamlit</p>
+            <h2>Microgrid Energy Management System</h2>
+            <p>
+              A rule-based EMS simulation for coordinating solar PV, battery
+              energy storage, load demand, and utility grid exchange across a
+              24-hour operating profile.
+            </p>
+          </div>
+          <ul class="project-list">
+            <li>Inputs: hourly load demand, PV generation, and time-of-use tariff data</li>
+            <li>Control logic: charge battery during PV surplus and discharge during demand deficit</li>
+            <li>Outputs: grid import/export, battery SOC, dispatch profile, and daily energy cost</li>
+            <li>Engineering focus: renewable self-consumption, peak import reduction, and cost analysis</li>
+          </ul>
+          <a class="button primary" href="microgrid-ems.html">View Project</a>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <p class="tag">MATLAB / Simulink</p>
+            <h2>Grid-Forming Inverter Control</h2>
+            <p>
+              A droop-based grid-forming inverter control study for improving
+              voltage and frequency support in low-inertia renewable power
+              systems.
+            </p>
+          </div>
+          <ul class="project-list">
+            <li>Control method: implemented P-f and Q-V droop relationships</li>
+            <li>Scenario testing: simulated weak grid and load variation cases</li>
+            <li>Outputs: voltage response, frequency response, and power sharing behavior</li>
+            <li>Engineering focus: stability support for renewable-rich grids</li>
+          </ul>
+          <a class="button primary" href="gfm.html">View Project</a>
+        </article>
+
+        <article class="project-card">
+          <div>
+            <p class="tag">MATLAB Automation</p>
+            <h2>MATLAB Automation</h2>
+            <p>
+              An automation workflow for engineering calculations, simulation
+              setup, result processing, plotting, and technical reporting.
+            </p>
+          </div>
+          <ul class="project-list">
+            <li>Workflow: automated input handling and simulation execution support</li>
+            <li>Processing: reusable scripts for result extraction and calculations</li>
+            <li>Outputs: generated plots, comparison tables, and report-ready summaries</li>
+            <li>Engineering focus: repeatable analysis and reduced manual simulation work</li>
+          </ul>
+          <a class="button primary" href="matlab.html">View Project</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Electrical Engineering Portfolio</p>
+    <p>Dashboard path: dashboard/app.py</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

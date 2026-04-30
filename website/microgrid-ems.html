@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microgrid EMS System | Electrical Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html#home">
+        <span class="brand-mark">EE</span>
+        <span>Electrical Engineer</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero project-page-hero">
+      <p class="eyebrow">Detailed Project</p>
+      <h1>Microgrid Energy Management System</h1>
+      <p>
+        A rule-based EMS project for coordinating solar PV generation, battery
+        energy storage, load demand, and grid exchange across a 24-hour
+        operating profile. The system supports dispatch analysis, battery SOC
+        tracking, renewable self-consumption review, and cost-oriented
+        microgrid operation.
+      </p>
+      <div class="hero-actions">
+        <a class="button secondary" href="index.html#projects">Back to Home</a>
+      </div>
+    </section>
+
+    <section class="section project-detail">
+      <div class="detail-layout">
+        <div class="detail-content">
+          <article class="detail-block">
+            <h3>Problem Statement</h3>
+            <p>
+              Microgrids with high renewable penetration face continuous
+              mismatch between PV generation and electrical load demand.
+              Excess solar power may be wasted when the battery is full, while
+              demand peaks can increase grid imports when the battery is not
+              dispatched effectively. The EMS must decide when to use PV, charge
+              storage, discharge storage, import from the grid, or export
+              surplus energy.
+            </p>
+          </article>
+
+          <article class="detail-block">
+            <h3>Methodology</h3>
+            <p>
+              The model evaluates each hourly time step using load, PV output,
+              battery SOC, battery power limits, SOC boundaries, and grid
+              exchange conditions. PV power is prioritized for local load
+              supply. Surplus PV charges the battery, while remaining surplus is
+              exported or curtailed. During deficits, the battery discharges
+              within its limits before importing power from the grid.
+            </p>
+          </article>
+
+          <article class="detail-block">
+            <h3>Tools Used</h3>
+            <ul class="tool-list">
+              <li>Python for EMS logic, dispatch calculations, and cost analysis</li>
+              <li>Streamlit for the interactive dashboard interface</li>
+              <li>Pandas for time-series data handling and result tables</li>
+              <li>NumPy for numerical operations and energy balance calculations</li>
+              <li>Matplotlib or Plotly for engineering graphs and dashboard plots</li>
+            </ul>
+          </article>
+
+          <article class="detail-block">
+            <h3>Results</h3>
+            <p>
+              The EMS produces hourly dispatch outputs including PV used by the
+              load, battery charge and discharge power, SOC variation, grid
+              import, grid export, and estimated operating cost. The results
+              help evaluate renewable utilization, battery sizing, grid
+              dependency, and the effect of dispatch rules on microgrid
+              performance.
+            </p>
+          </article>
+        </div>
+
+        <aside class="graph-panel" aria-label="Graph placeholders">
+          <div class="graph-placeholder">
+            <span>Graph Placeholder</span>
+            <p>Hourly load demand and PV generation</p>
+          </div>
+          <div class="graph-placeholder">
+            <span>Graph Placeholder</span>
+            <p>Battery SOC profile across 24 hours</p>
+          </div>
+          <div class="graph-placeholder">
+            <span>Graph Placeholder</span>
+            <p>Grid import, export, and dispatch summary</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section back-home-section">
+      <a class="button primary" href="index.html#home">Back to Home</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Electrical Engineer Portfolio</p>
+    <p>Microgrid EMS | Renewable Energy | Energy Storage</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
