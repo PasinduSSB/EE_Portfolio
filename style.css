@@ -526,6 +526,49 @@ a {
   margin: 0;
 }
 
+.project-detail-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.simulation-results {
+  border-top: 1px solid rgba(42, 52, 68, 0.72);
+}
+
+.plots-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.plot-container {
+  padding: 22px;
+  background: linear-gradient(180deg, rgba(24, 31, 45, 0.92), rgba(18, 23, 34, 0.92));
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.plot-container h3 {
+  margin: 0 0 14px;
+}
+
+.plot-img {
+  display: block;
+  width: 100%;
+  min-height: 260px;
+  object-fit: contain;
+  border: 1px solid rgba(170, 180, 195, 0.22);
+  border-radius: 8px;
+  background: rgba(7, 9, 13, 0.44);
+}
+
+.caption {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 12px 0 30px;
+}
+
 .page-hero {
   padding-top: 88px;
   padding-bottom: 34px;
@@ -575,6 +618,7 @@ a {
   .contact-section,
   .project-preview,
   .detail-layout,
+  .plots-grid,
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
