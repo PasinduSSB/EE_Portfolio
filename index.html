@@ -23,6 +23,8 @@
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        <a href="ems.html">View Project</a>
+        <a href="gfm.html" class="btn">View Project</a>
       </div>
     </nav>
   </header>
@@ -83,7 +85,7 @@
             Energy management dashboard for coordinating PV generation, battery
             storage, load demand, and grid exchange in a microgrid.
           </p>
-          <a class="button secondary" href="microgrid-ems.html">View Project</a>
+          <a class="button secondary" href="projects.html">View Project</a>
         </article>
         <article class="card">
           <h3>GFM Inverter Control</h3>
@@ -91,7 +93,7 @@
             Grid-forming inverter control concept focused on voltage support,
             frequency stability, and renewable-rich power systems.
           </p>
-          <a class="button secondary" href="gfm.html">View Project</a>
+          <a class="button secondary" href="projects.html">View Project</a>
         </article>
         <article class="card">
           <h3>MATLAB Automation</h3>
@@ -99,8 +101,73 @@
             Automation workflow for electrical engineering calculations,
             simulation setup, result processing, and technical reporting.
           </p>
-          <a class="button secondary" href="matlab.html">View Project</a>
+          <a class="button secondary" href="projects.html">View Project</a>
         </article>
+      </div>
+    </section>
+
+    <section class="section project-detail" id="ems-microgrid">
+      <div class="section-heading">
+        <p class="eyebrow">Detailed Project</p>
+        <h2>EMS Microgrid System</h2>
+      </div>
+
+      <div class="detail-layout">
+        <div class="detail-content">
+          <article class="detail-block">
+            <h3>Problem Statement</h3>
+            <p>
+              Renewable-powered microgrids must balance variable PV generation,
+              changing load demand, battery state of charge, and utility grid
+              exchange. Without a clear energy management strategy, the system
+              can waste solar energy, increase grid imports during peak periods,
+              and operate the battery inefficiently.
+            </p>
+          </article>
+
+          <article class="detail-block">
+            <h3>Methodology</h3>
+            <p>
+              The EMS applies a rule-based dispatch workflow over a 24-hour
+              operating profile. PV generation first supplies the load, surplus
+              energy charges the battery within SOC limits, and remaining
+              surplus is exported or curtailed. During generation deficits, the
+              battery discharges before the system imports power from the grid.
+            </p>
+          </article>
+
+          <article class="detail-block">
+            <h3>Tools Used</h3>
+            <ul class="tool-list">
+              <li>Python for dispatch logic and energy calculations</li>
+              <li>Streamlit for the interactive engineering dashboard</li>
+              <li>Pandas for hourly load, PV, SOC, and tariff data handling</li>
+              <li>Matplotlib or Plotly for result visualization</li>
+            </ul>
+          </article>
+
+          <article class="detail-block">
+            <h3>Results</h3>
+            <p>
+              The model estimates battery SOC behavior, grid import and export,
+              PV self-consumption, and daily operating cost. It provides a clear
+              comparison between renewable availability and load demand, helping
+              evaluate storage sizing, peak import reduction, and microgrid
+              operating performance.
+            </p>
+          </article>
+        </div>
+
+        <aside class="graph-panel" aria-label="Graph placeholders">
+          <div class="graph-placeholder">
+            <span>Graph Placeholder</span>
+            <p>Load vs PV generation profile</p>
+          </div>
+          <div class="graph-placeholder">
+            <span>Graph Placeholder</span>
+            <p>Battery SOC and grid exchange</p>
+          </div>
+        </aside>
       </div>
     </section>
 
@@ -146,9 +213,9 @@
         <h2>Available for electrical engineering projects, internships, and technical collaborations.</h2>
       </div>
       <div class="contact-card">
-        <a href="mailto:your.email@example.com">your.email@example.com</a>
-        <a href="tel:+94700000000">+94 70 000 0000</a>
-        <span>Colombo, Sri Lanka</span>
+        <a href="mailto:sankalana512@gmail.com">sankalana512@gmail.com</a>
+        <a href="tel:+94717180994">+94 71 718 0994</a>
+        <span>Gampaha, Sri Lanka</span>
       </div>
     </section>
   </main>
