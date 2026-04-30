@@ -164,6 +164,37 @@ a {
   margin-top: 28px;
 }
 
+.quick-contact {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.quick-contact a {
+  min-width: 0;
+  padding: 14px;
+  color: var(--text);
+  text-decoration: none;
+  background: rgba(18, 23, 34, 0.78);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.quick-contact a:hover {
+  border-color: var(--accent);
+}
+
+.quick-contact span,
+.contact-label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -598,12 +629,17 @@ a {
 }
 
 .contact-card a {
+  padding: 14px;
   color: var(--text);
   text-decoration: none;
+  border: 1px solid rgba(42, 52, 68, 0.72);
+  border-radius: 8px;
+  background: rgba(7, 9, 13, 0.24);
 }
 
 .contact-card a:hover {
   color: var(--accent);
+  border-color: var(--accent);
 }
 
 .footer {
@@ -631,6 +667,10 @@ a {
   }
 
   .system-readout {
+    grid-template-columns: 1fr;
+  }
+
+  .quick-contact {
     grid-template-columns: 1fr;
   }
 
