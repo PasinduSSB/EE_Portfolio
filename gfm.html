@@ -132,32 +132,63 @@
     <section class="section simulation-results">
       <div class="section-heading">
         <p class="eyebrow">Visual Results</p>
-        <h2>Simulation Results</h2>
+        <h2>Simulation Results (Weak Grid &ndash; Step Load)</h2>
+        <p>
+          The following results correspond to step load disturbances under weak
+          grid conditions, representing a critical scenario for evaluating the
+          stability and dynamic performance of the grid-forming inverter.
+          Additional simulations under other operating conditions were also
+          conducted.
+        </p>
       </div>
 
       <div class="plots-grid">
         <div class="plot-container">
-          <h3>Frequency</h3>
-          <img src="results/freq_islanded.png" alt="Frequency deviation under step load" class="plot-img">
-          <p class="caption">Frequency deviation under step load showing stable droop-based regulation.</p>
+          <h3>Frequency Response</h3>
+          <img src="results/frequency.png" alt="Frequency response under weak grid step load" class="plot-img">
+          <p class="caption">
+            Frequency remains close to nominal with a small deviation during the step load event, followed by a well-damped recovery, indicating stable droop-based frequency control.
+          </p>
         </div>
 
         <div class="plot-container">
-          <h3>Power</h3>
-          <img src="results/power_step.png" alt="Active and reactive power response" class="plot-img">
-          <p class="caption">Active and reactive power response demonstrating dynamic system behavior.</p>
+          <h3>Active Power Response</h3>
+          <img src="results/power.png" alt="Active power response under weak grid step load" class="plot-img">
+          <p class="caption">
+            Active power dynamically adjusts to the load change, showing a transient response followed by stable steady-state operation.
+          </p>
         </div>
 
         <div class="plot-container">
-          <h3>Voltage</h3>
-          <img src="results/voltage_weak_grid.png" alt="RMS voltage under weak grid conditions" class="plot-img">
-          <p class="caption">RMS voltage behavior under weak grid conditions.</p>
+          <h3>Reactive Power Response</h3>
+          <img src="results/reactive.png" alt="Reactive power response under weak grid step load" class="plot-img">
+          <p class="caption">
+            Reactive power varies to support voltage regulation under disturbance, demonstrating effective Q&ndash;V droop control.
+          </p>
         </div>
 
         <div class="plot-container">
-          <h3>DC-Link</h3>
-          <img src="results/dc_link.png" alt="DC-link voltage during disturbances" class="plot-img">
-          <p class="caption">DC-link voltage maintained within stable limits during disturbances.</p>
+          <h3>Voltage and Current Waveforms</h3>
+          <img src="results/vi.png" alt="Voltage and current waveforms under weak grid step load" class="plot-img">
+          <p class="caption">
+            Voltage remains stable and sinusoidal while current adapts to the load variation, maintaining system balance.
+          </p>
+        </div>
+
+        <div class="plot-container">
+          <h3>RMS Voltage</h3>
+          <img src="results/rms.png" alt="RMS voltage under weak grid step load" class="plot-img">
+          <p class="caption">
+            RMS voltage remains within acceptable limits with minor transient deviation during the disturbance.
+          </p>
+        </div>
+
+        <div class="plot-container">
+          <h3>DC-Link Voltage</h3>
+          <img src="results/dclink.png" alt="DC-link voltage under weak grid step load" class="plot-img">
+          <p class="caption">
+            DC-link voltage is well regulated, indicating stable energy balance and proper inverter operation.
+          </p>
         </div>
       </div>
     </section>

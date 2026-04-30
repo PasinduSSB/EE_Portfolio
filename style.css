@@ -541,6 +541,7 @@ a {
 }
 
 .plot-container {
+  margin-top: 20px;
   padding: 22px;
   background: linear-gradient(180deg, rgba(24, 31, 45, 0.92), rgba(18, 23, 34, 0.92));
   border: 1px solid var(--line);
@@ -555,7 +556,8 @@ a {
 .plot-img {
   display: block;
   width: 100%;
-  min-height: 260px;
+  max-width: 700px;
+  margin: 10px auto 10px auto;
   object-fit: contain;
   border: 1px solid rgba(170, 180, 195, 0.22);
   border-radius: 8px;
@@ -566,7 +568,7 @@ a {
   text-align: center;
   font-size: 0.9rem;
   color: #aaa;
-  margin: 12px 0 30px;
+  margin: 0 0 30px;
 }
 
 .page-hero {
